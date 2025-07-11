@@ -29,4 +29,8 @@ export class AppComponent {
       this.history.push(`[Reset] counter is now ${this.count}`)
     }
   }
+
+  clearHistory() {
+    this.history = [];
+  }
 }
