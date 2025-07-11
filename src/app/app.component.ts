@@ -31,6 +31,8 @@ export class AppComponent {
   }
 
   clearHistory() {
-    this.history = [];
+    if(this.history.length > 0) {
+      this.history = [];
+    }
   }
 }
